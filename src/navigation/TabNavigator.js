@@ -10,7 +10,12 @@ export default function TabNavigator(){
     return(
         <NavigationContainer>
             <Tab.Navigator screenOptions={{
-                headerShown:false
+                headerStyle:{
+                    backgroundColor:'#1E88E5',
+                    borderWidth:2,
+                },
+                headerTitleAlign:"center",
+                headerTintColor:"white",
             }} >
                 <Tab.Screen name='Home' component={Home} options={{ tabBarIcon: ({ color, size }) => <Ionicons name="home" size={size} color={color} /> }} />
 
